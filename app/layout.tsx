@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "../styles/global.css";
 
 export const metadata: Metadata = {
   title: "DevLog",
@@ -12,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-gray-700">{children}</body>
     </html>
   );
 }
